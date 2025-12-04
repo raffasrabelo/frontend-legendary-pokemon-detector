@@ -17,7 +17,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:5000/predict', stats);
+      const response = await axios.post('https://ariflaskml-dff5g9c7bdhyhsc5.brazilsouth-01.azurewebsites.net/predict', stats);
       setResultado(response.data);
     } catch (error) {
       console.error("Erro", error);
