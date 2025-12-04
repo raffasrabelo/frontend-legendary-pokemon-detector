@@ -1,0 +1,56 @@
+.pokedex-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #dc0a2d; /* Vermelho Pokedex */
+  padding: 20px;
+  border-radius: 15px;
+  border: 5px solid #8b0000;
+  color: white;
+  font-family: 'Courier New', monospace;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  background-color: #232323;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.stat-input {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #98cb98; /* Verde Gameboy */
+}
+
+.scan-btn {
+  grid-column: span 2;
+  padding: 15px;
+  background-color: #1474fc; /* Azul Botão */
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 2px solid white;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+
+.common { background-color: #f0f0f0; border: 4px solid gray; }
+.legendary { background-color: #ffd700; border: 4px solid orange; animation: blink 1s infinite; }
+
+@keyframes blink { 50% { opacity: 0.8; } }
